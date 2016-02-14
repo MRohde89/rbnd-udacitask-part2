@@ -19,9 +19,9 @@ module Listable
       value = " ⇨"
     elsif priority == "low"
       value = " ⇩"
-    elsif priority == nil
+    else
       value = ""
-    else return raise UdaciListErrors::InvalidPriorityValue, "#{priority} is not a valid priority type!"
+    #else raise UdaciListErrors::InvalidPriorityValue, "#{priority} is not a valid priority type!"
     end
     return value
   end
