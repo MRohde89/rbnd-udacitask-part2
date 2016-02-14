@@ -27,11 +27,4 @@ module Listable
   def format_name(site_name)
     site_name ? site_name : ""
   end
-
-  # def details(type,description,options={})
-  #   format_description(description)
-  #   ("event dates: " + format_date(options[:start_date],options[:end_date], "list")) if type == "list"
-  #   ("site name: " + format_name(options[:site_name])) if type == "link"
-  #   (format_date(options[:start_date],nil,"due") + format_priority(options[:priority])) if type == "event"
-  # end
 end

@@ -2,6 +2,7 @@ require 'bundler/setup' # formatador needs to be added
 require 'chronic'
 require 'colorize'
 require 'formatador'
+require 'artii'
 # Find a third gem of your choice and add it to your project
 
 require 'date'
@@ -46,4 +47,4 @@ new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-# new_list.filter("event")
+new_list.filter("event")
