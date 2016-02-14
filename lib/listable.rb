@@ -14,15 +14,24 @@ module Listable
   end
   def format_priority(priority)
     if priority == "high"
-      value = " ⇧"
+      value = " ⇧ ".colorize(:red)
     elsif priority == "medium"
-      value = " ⇨"
+      value = " ⇨ ".colorize(:yellow)
     elsif priority == "low"
-      value = " ⇩"
+      value = " ⇩ ".colorize(:blue)
     else
       value = ""
-    #else raise UdaciListErrors::InvalidPriorityValue, "#{priority} is not a valid priority type!"
     end
     return value
   end
+  def format_name(site_name)
+    site_name ? site_name : ""
+  end
+
+  # def details(type,description,options={})
+  #   format_description(description)
+  #   ("event dates: " + format_date(options[:start_date],options[:end_date], "list")) if type == "list"
+  #   ("site name: " + format_name(options[:site_name])) if type == "link"
+  #   (format_date(options[:start_date],nil,"due") + format_priority(options[:priority])) if type == "event"
+  # end
 end

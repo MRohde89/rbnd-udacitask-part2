@@ -1,6 +1,7 @@
-require 'bundler/setup'
+require 'bundler/setup' # formatador needs to be added
 require 'chronic'
-# require 'colorize'
+require 'colorize'
+require 'formatador'
 # Find a third gem of your choice and add it to your project
 
 require 'date'

@@ -8,6 +8,12 @@ class EventItem
     @end_date = Chronic.parse(options[:end_date]) if options[:end_date]
   end
   def details
-    format_description(@description) + "event dates: " + format_date(@start_date,@end_date, "list")
+    table_data = [
+      { :"1. item_type" => "event",
+        :"2. description" => @description,
+        :"3. event_dates" => format_date(@start_date,@end_date, "list")
+      }
+    ]
+    Formatador.display_table(table_data)
   end
 end

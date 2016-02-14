@@ -8,8 +8,13 @@ class TodoItem
     @priority = options[:priority]
   end
   def details
-    format_description(@description) + "due: " +
-    format_date(@start_date,nil,"due") +
-    format_priority(@priority)
+    table_data = [
+      { :"1. item_type" => "ToDo",
+        :"2. description" => @description,
+        :"3. date" => format_date(@start_date,nil,"due"),
+        :"4. priority" => format_priority(@priority)
+      }
+    ]
+    Formatador.display_table(table_data)
   end
 end
