@@ -3,6 +3,7 @@ require 'chronic'
 require 'colorize'
 require 'formatador'
 require 'artii'
+require 'catpix'
 # Find a third gem of your choice and add it to your project
 
 require 'date'
@@ -12,6 +13,7 @@ require_relative "lib/udacilist"
 require_relative "lib/todo"
 require_relative "lib/event"
 require_relative "lib/link"
+require_relative "lib/image"
 
 list = UdaciList.new(title: "Julia's Stuff")
 list.add("todo", "Buy more cat food", due: "2016-02-03", priority: "low")
@@ -47,4 +49,6 @@ new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-new_list.filter("event")
+new_list.filter("event", "todo")
+new_list.add("image", "never forget what controls the world", url: "http://realfunny.net/uploads/the_two_things_that_control_the_world_in_one_picture._655908253.jpg")
+new_list.all
