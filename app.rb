@@ -49,6 +49,8 @@ new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-new_list.filter("event", "todo")
-new_list.add("image", "never forget what controls the world", url: "http://realfunny.net/uploads/the_two_things_that_control_the_world_in_one_picture._655908253.jpg")
+new_list.filter("event", "todo") # can now take multiple filters
+
+# new class image. add a url or path to include that image
+new_list.add("image", "never forget who controls the world", url: "http://realfunny.net/uploads/the_two_things_that_control_the_world_in_one_picture._655908253.jpg")
 new_list.all

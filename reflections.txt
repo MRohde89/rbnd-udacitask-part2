@@ -1,13 +1,28 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+
+I used multiple gems. First i used the formatador gem to have a more polished list output (although it gets a bit overloaded for many entries) then i used the artii gem to make some nice headers for the list. The last gem i used was the catpix gem, which  puts images into my newly created image class.  
+
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) Feature 1 are multiple entries for filtering. It is now possible to filter different items. For example „event“ and „todo“ at the same time 
+  b) Feature 2 is the additional class ImageItem. It is now possible to add images and descriptions of the image into the list. 
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+
+I spend around 6 hours on this project. 
+
 2. What was the most rewarding challenge you conquered?
+
+The most rewarding challenges were the additional features. At first it took me a while to manage the filter method, because i didn’t thought about the .class method for all items to filter. This took me a while to figure out, but in the end i am pretty proud that this works now efficient without redundant code. Furthermore the catpix gem was pretty useful and easy to use with stunning results.
+
 3. What two additional features did you build? Why?
+
+the image Class and the possibility for multiple entries in the filter list
+(see above)
+
 4. Where do you still have room to grow?
+
+I think i have to learn more about accessing classes from another class and more syntax sugar, to let the code look more decent. Overall i am really proud on finishing this project and entering into the world of gems, because that makes a lot of things much easier and therefore less impossible :-) 

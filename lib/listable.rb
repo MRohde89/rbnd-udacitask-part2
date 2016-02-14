@@ -3,6 +3,7 @@ module Listable
     "#{description}".ljust(30)
   end
   def format_date(start_date = nil, end_date = nil, type)
+    # looks what kind of date is needed based on the type. Starting end_date date is not mandatory
     if type == "due"
       start_date ? (return start_date.strftime("%D")) : (return "No due date")
     elsif type == "list"
@@ -13,6 +14,7 @@ module Listable
     end
   end
   def format_priority(priority)
+    # uses colorize to highlight different priorities. The validation of the priority is made in udacilist.rb
     if priority == "high"
       value = " ⇧ ".colorize(:red)
     elsif priority == "medium"
@@ -25,6 +27,7 @@ module Listable
     return value
   end
   def format_name(site_name)
+    # formats the name of the site
     site_name ? site_name : ""
   end
 end

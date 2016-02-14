@@ -8,6 +8,7 @@ class EventItem
     @end_date = Chronic.parse(options[:end_date]) if options[:end_date]
   end
   def details
+    # uses formatador to make a table view out of the hash
     table_data = [
       { :"1. item_type" => "event",
         :"2. description" => @description,

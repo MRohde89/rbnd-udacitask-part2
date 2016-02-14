@@ -8,6 +8,7 @@ class TodoItem
     @priority = options[:priority]
   end
   def details
+    # uses formatador to make a table view out of the hash
     table_data = [
       { :"1. item_type" => "ToDo",
         :"2. description" => @description,
